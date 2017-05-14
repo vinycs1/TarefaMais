@@ -11,4 +11,6 @@ public interface PersonRepository extends PagingAndSortingRepository<Person, Lon
 
 	List<Person> findByLastName(@Param("name") String name);
 
+	List<Person> findByActive(@Param("active") boolean active);
+
 }
